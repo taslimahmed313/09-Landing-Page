@@ -123,3 +123,31 @@ Courses Styles
   padding: 3px 7px;
   color: #ff4a60;
 }
+/* -----------------------
+---------Media Query------
+-------------------------- */
+/* Mobile Devises */
+@media only screen and (max-width: 688px) {
+  .container {
+    width: 100%;
+  }
+  .players,
+  .blogs,
+  .courses {
+    grid-template-columns: 1fr;
+  }
+  .player,
+  .blog {
+    flex-direction: column;
+  }
+}
+/* Tablet Devises */
+@media only screen and (min-width: 689px) and (max-width: 991px) {
+  .container {
+    width: 100%;
+  }
+  .players,
+  .courses {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
